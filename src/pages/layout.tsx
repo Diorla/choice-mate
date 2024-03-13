@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+import styles from "@/styles/Layout.module.css";
 
 export default function Layout({
   children,
@@ -15,7 +17,21 @@ export default function Layout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <nav className={styles.nav}>
+        <Link href="/">Home</Link>
+        <Link href="/random-number">Random number</Link>
+      </nav>
       {children}
     </>
   );
 }
+
+/**
+ * Secret santa
+ * Random grouping
+ * Select item(s)
+ * Random number
+ * Binomial distribution
+ * Binomial selection
+ * Word generator
+ */

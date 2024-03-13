@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* Define 3 columns with equal width */
+  grid-auto-rows: minmax(auto, 1fr);
+  /* Allow rows to grow as needed, with minimum of auto */
+}
+
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Define 3 columns with equal width */
+    grid-auto-rows: minmax(auto, 1fr);
+    /* Allow rows to grow as needed, with minimum of auto */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Define 3 columns with equal width */
+    grid-auto-rows: minmax(auto, 1fr);
+    /* Allow rows to grow as needed, with minimum of auto */
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Define 3 columns with equal width */
+    grid-auto-rows: minmax(auto, 1fr);
+    /* Allow rows to grow as needed, with minimum of auto */
+  }
+}
+
+@media (max-width: 200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Define 3 columns with equal width */
+    grid-auto-rows: minmax(auto, 1fr);
+    /* Allow rows to grow as needed, with minimum of auto */
+  }
+}

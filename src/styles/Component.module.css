@@ -1,0 +1,20 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+}
+
+.input {
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid silver;
+}
+
+.label {
+  color: black;
+}
+
+.input:focus {
+  border: 1px solid green;
+}
